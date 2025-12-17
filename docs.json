@@ -38,6 +38,12 @@
             ]
           },
           {
+            "group": "Design Tutorials",
+            "pages": [
+              "tutorials/photoshop"
+            ]
+          },
+          {
             "group": "AI tools",
             "pages": [
               "ai-tools/cursor",
