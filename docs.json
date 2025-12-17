@@ -40,7 +40,9 @@
           {
             "group": "Design Tutorials",
             "pages": [
-              "tutorials/photoshop"
+              "tutorials/photoshop",
+              "tutorials/photoshop-procedure",
+              "tutorials/photoshop-reference"
             ]
           },
           {
