@@ -16,9 +16,9 @@
           {
             "group": "Getting started",
             "pages": [
-              "index",
-              "quickstart",
-              "development"
+              "tutorials/photoshop",
+              "tutorials/photoshop-procedure",
+              "tutorials/photoshop-reference"
             ]
           },
           {
@@ -40,9 +40,16 @@
           {
             "group": "Design Tutorials",
             "pages": [
-              "tutorials/photoshop",
-              "tutorials/photoshop-procedure",
-              "tutorials/photoshop-reference"
+              "tutorials/photoshop-adjustment-layers",
+              "tutorials/photoshop-export-file-formats",
+              "tutorials/photoshop-generative-ai",
+              "tutorials/photoshop-keyboard-shortcuts",
+              "tutorials/photoshop-layers-masks",
+              "tutorials/photoshop-plugins-integrations",
+              "tutorials/photoshop-technical-requirements",
+              "tutorials/photoshop-troubleshoot-performance",
+              "tutorials/photoshop-whats-new",
+              "tutorials/photoshop-workspace-overview"
             ]
           },
           {
