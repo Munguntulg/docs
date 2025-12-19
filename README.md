@@ -41,3 +41,4 @@ mint dev
 
 ### Эх сурвалж
 - [Mintlify баримтжуулалт](https://mintlify.com/docs)
+# test
