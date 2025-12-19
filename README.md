@@ -12,6 +12,24 @@
 
 **[Бүрэн Quickstart гарын авлагыг дагана уу](https://starter.mintlify.com/quickstart)**
 
+## Photoshop хичээлүүд
+
+Энэхүү репозиторт дараах Photoshop хичээлүүд багтсан бөгөөд та `tutorials/` болон `ai-tools/` хавтсуудаас олж үзнэ:
+
+- `tutorials/photoshop.mdx` — Photoshop ерөнхий танилцуулга
+- `tutorials/photoshop-workspace-overview.mdx` — Workspace танилцуулга
+- `tutorials/photoshop-adjustment-layers.mdx` — Adjustment layers
+- `tutorials/photoshop-layers-masks.mdx` — Layers & Masks заавар
+- `tutorials/photoshop-keyboard-shortcuts.mdx` — Keyboard shortcuts
+- `tutorials/photoshop-export-file-formats.mdx` — Export болон файлын формат
+- `ai-tools/photoshop-plugins-integrations.mdx` — Plugins болон интеграци
+- `ai-tools/photoshop-generative-ai.mdx` — Generative AI ашиглалт
+- `tutorials/photoshop-technical-requirements.mdx` — Техник шаардлага
+- `tutorials/photoshop-troubleshoot-performance.mdx` — Гүйцэтгэлийн алдааг засах
+- `tutorials/photoshop-whats-new.mdx` — Шинэ боломжууд
+
+Эдгээр хичээлүүдийг уншиж, баримтжууллын навигацаас шууд нэвтрэх боломжтой.
+
 ## Хөгжил (Development)
 
 Баримтжуулалтынхаа өөрчлөлтийг орон нутгийн орчинд урьдчилж харахын тулд [Mintlify CLI](https://www.npmjs.com/package/mint)-г суулгана уу. Суулгах команд:
