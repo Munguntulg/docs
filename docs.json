@@ -22,27 +22,10 @@
             ]
           },
           {
-            "group": "Customization",
-            "pages": [
-              "essentials/settings",
-              "essentials/navigation"
-            ]
-          },
-          {
-            "group": "Writing content",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
             "group": "Design Tutorials",
             "pages": [
               "tutorials/photoshop-adjustment-layers",
               "tutorials/photoshop-export-file-formats",
-              "tutorials/photoshop-generative-ai",
               "tutorials/photoshop-keyboard-shortcuts",
               "tutorials/photoshop-layers-masks",
               "tutorials/photoshop-plugins-integrations",
@@ -55,9 +38,9 @@
           {
             "group": "AI tools",
             "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
+              "ai-tools/photoshop-generative-ai",
+              "ai-tools/photoshop-plugins-integrations",
+              "ai-tools/photoshop-export-file-formats"
             ]
           }
         ]
