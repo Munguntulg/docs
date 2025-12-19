@@ -1,43 +1,43 @@
-# Mintlify Starter Kit
+# Mintlify эхлэлийн багц
 
-Use the starter kit to get your docs deployed and ready to customize.
+Энэхүү эхлэлийн багцыг ашигласнаар таны баримтжуулалтыг (docs) байршуулж, өөрийн хэрэгцээнд тохируулан бэлэн болгох боломжтой.
 
-Click the green **Use this template** button at the top of this repo to copy the Mintlify starter kit. The starter kit contains examples with
+Энэхүү репозиторийн дээд талд байрлах ногоон **Use this template** товчийг дарж Mintlify эхлэлийн багцыг хуулж авна уу. Багц нь дараах жишээ хуудаснуудыг агуулсан:
 
-- Guide pages
-- Navigation
-- Customizations
-- API reference pages
-- Use of popular components
+- Зааварчилгааны хуудас
+- Навигаци
+- Тохиргоо, кастомизаци
+- API лавлах хуудас
+- Түгээмэл компонентүүдийн жишээ ашиглалт
 
-**[Follow the full quickstart guide](https://starter.mintlify.com/quickstart)**
+**[Бүрэн Quickstart гарын авлагыг дагана уу](https://starter.mintlify.com/quickstart)**
 
-## Development
+## Хөгжил (Development)
 
-Install the [Mintlify CLI](https://www.npmjs.com/package/mint) to preview your documentation changes locally. To install, use the following command:
+Баримтжуулалтынхаа өөрчлөлтийг орон нутгийн орчинд урьдчилж харахын тулд [Mintlify CLI](https://www.npmjs.com/package/mint)-г суулгана уу. Суулгах команд:
 
 ```
 npm i -g mint
 ```
 
-Run the following command at the root of your documentation, where your `docs.json` is located:
+`docs.json` файлт байрласан баримтжууллын үндсэн фолдерт доорх командыг ажиллуулна:
 
 ```
 mint dev
 ```
 
-View your local preview at `http://localhost:3000`.
+Орон нутгийн урьдчилсан харах хаяг: `http://localhost:3000`.
 
-## Publishing changes
+## Өөрчлөлтүүдийг нийтлэх (Publishing changes)
 
-Install our GitHub app from your [dashboard](https://dashboard.mintlify.com/settings/organization/github-app) to propagate changes from your repo to your deployment. Changes are deployed to production automatically after pushing to the default branch.
+Өөрчлөлтүүдийг репозитор-аас таны байршуулалтад дамжуулахын тулд манай GitHub апп-ыг таны [dashboard](https://dashboard.mintlify.com/settings/organization/github-app)-аас суулгана уу. Өөрчлөлтүүдийг үндсэн (default) салбарт түлхсэний дараа автомат нэгжээр production руу байршуулна.
 
-## Need help?
+## Тусламж хэрэгтэй юу?
 
-### Troubleshooting
+### Асуудал шийдвэрлэх (Troubleshooting)
 
-- If your dev environment isn't running: Run `mint update` to ensure you have the most recent version of the CLI.
-- If a page loads as a 404: Make sure you are running in a folder with a valid `docs.json`.
+- Хэрэв dev орчин ажиллахгүй байвал: CLI-гийн хамгийн сүүлийн хувилбарыг авч байх `mint update` командыг ажиллуулна уу.
+- Хэрэв хуудас 404 гарвал: Та `docs.json` файл зөв байрласан фолдерт ажиллуулж байгаагаа шалгаарай.
 
-### Resources
-- [Mintlify documentation](https://mintlify.com/docs)
+### Эх сурвалж
+- [Mintlify баримтжуулалт](https://mintlify.com/docs)
