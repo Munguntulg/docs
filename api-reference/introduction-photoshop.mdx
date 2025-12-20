@@ -1,0 +1,70 @@
+---
+title: 'Introduction — Photoshop API'
+description: 'API reference for Photoshop integrations'
+---
+
+## Photoshop интеграцийн API — тойм
+
+Энэхүү API reference нь таны `Photoshop` tutorial болон automation процессуудтай холбогдох API endpoint‑уудыг тайлбарлана. OpenAPI спецификацаар бүх request/response, схем болон security тохиргоонуудыг тодорхойлсон байна.
+
+Энд юу байх ёстой:
+
+- Base URL болон хувилбар (жишээ: `https://api.example.com/v1/photoshop`)
+- Аутентификац (Bearer token / API key) ба хэрхэн авах талаар тайлбар
+- Photoshop‑тай холбоотой гол endpoint‑ууд: зураг upload, crop, color adjust, export, preset apply, jobs статус, webhook хүлээн авах гэх мэт
+- Request/Response жишээ (curl / JavaScript) ба статус кодын тайлбар
+- Rate limits, асинхрон job‑ийн polling/ webhook жишээ
+- OpenAPI спецификац (`openapi.json`) болон API тестлэх заавар
+
+Бүх илүү дэлгэрэнгүй техникийн мэдээллийг [`openapi.json`](./openapi.json) файлд байрлуулсан.
+
+## Гол endpoint‑ууд (хураангуй)
+
+- `POST /photoshop/upload` — Зураг upload хийх (multipart/form-data) → буцаана: `fileId`
+- `POST /photoshop/crop` — `fileId` ашиглан crop үйлдэл хийх (payload: `x,y,width,height`)
+- `POST /photoshop/adjust` — `fileId` болон тохиргоо (brightness, contrast) өгч өнгө засах
+- `POST /photoshop/preset/apply` — `fileId` дээр preset (Adjustment Layer) хэрэглэх
+- `POST /photoshop/export` — `fileId`-аар экспорт үүсгэх (формат, quality) → буцаана: `exportId`
+- `GET /photoshop/jobs/{id}` — Асинхрон job статус шалгах
+- `POST /photoshop/webhook` — Export/job эхлэх/дуусах webhook хүлээн авах
+
+## Quick start — curl жишээ
+
+1) Зураг upload:
+
+```bash
+curl -X POST "https://api.example.com/v1/photoshop/upload" \
+  -H "Authorization: Bearer $TOKEN" \
+  -F "file=@./image.jpg"
+```
+
+response (JSON):
+
+```json
+{
+  "fileId": "abc123",
+  "filename": "image.jpg"
+}
+```
+
+2) Brightness/Contrast тохиргоо хийх:
+
+```bash
+curl -X POST "https://api.example.com/v1/photoshop/adjust" \
+  -H "Authorization: Bearer $TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{"fileId":"abc123","brightness":10,"contrast":5}'
+```
+
+Асинхрон job буцах бол job id‑г авна, дараа нь `GET /photoshop/jobs/{id}`-аар статус шалгана.
+
+## OpenAPI болон тестлэх
+
+1. `api-reference/openapi.json` файлыг нээнэ.
+2. Swagger UI, Redoc эсвэл Postman‑д импортлан endpoint‑уудыг шалгана.
+
+## Холбоос ба Tutorial уялдаа
+
+Энэхүү API docs нь `tutorials/` хавтас дахь Photoshop заавруудтай холбоотой үйлдлүүдийг автоматжуулахад ашиглагдана. Жишээ нь: Tutorial‑д заасан crop/adjust алхмуудыг автоматжуулахад эдгээр endpoint‑ыг ашиглана.
+
+Хүсвэл би `Quick start`-г илүү өргөжүүлж, JavaScript (fetch/axios) жишээнүүд болон webhook‑ийн хүлээн авах серверийн жишээ нэмээд `openapi.json`-ийг Photoshop‑тай холбогдох бодит схемээр шинэчилж болно.
