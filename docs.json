@@ -17,8 +17,8 @@
             "group": "Getting started",
             "pages": [
               "tutorials/photoshop",
-              "tutorials/photoshop-procedure",
-              "tutorials/photoshop-reference"
+              "tutorials/procedure",
+              "tutorials/reference"
             ]
           },
           {
@@ -39,8 +39,7 @@
             "group": "AI tools",
             "pages": [
               "ai-tools/photoshop-generative-ai",
-              "ai-tools/photoshop-plugins-integrations",
-              "ai-tools/photoshop-export-file-formats"
+              "ai-tools/photoshop-plugins-integrations"
             ]
           }
         ]
